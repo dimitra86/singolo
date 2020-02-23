@@ -11,3 +11,51 @@ header {
     background: #323232;
     margin: 0 auto;
 }
+
+header nav {
+    font-family: Lato;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0 auto;
+}
+
+.logo__singolo {
+    font-family: Lato;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    margin-top: 0 auto;
+    padding-top: 9px;
+}
+
+.logo__singolo2 {
+    font-family: Lato;
+    text-decoration: none;
+    font-size: 22px;
+    color: #f06c64;
+    margin-top: 0 auto;
+    padding-top: 9px;
+}
+
+.header-line {
+    font-family: Lato;
+}
+
+header nav a {
+    font-family: Lato;
+    text-decoration: none;
+    font-size: 9px;
+    color: white;
+    margin-top: 0 auto;
+    padding-top: 9px;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("assets/Lato-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
