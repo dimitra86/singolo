@@ -75,6 +75,26 @@ header nav a {
     margin-left: 8px;
 }
 
+header nav a:hover {
+    color: #f06c64;
+}
+
+.slider {
+    width: 1020px;
+    height: 600px;
+    background: #f06c64;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.slider__bottom {
+    align-self: flex-end;
+    height: 6px;
+}
+
 @font-face {
     font-family: "Lato";
     src: url("assets/Lato-Bold.ttf") format("truetype");
