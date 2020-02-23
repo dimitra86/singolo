@@ -95,6 +95,13 @@ header nav a:hover {
     height: 6px;
 }
 
+.services {
+    width: 1020px;
+    height: 502px;
+    background: #f2f2f2;
+    margin: 0 auto;
+}
+
 @font-face {
     font-family: "Lato";
     src: url("assets/Lato-Bold.ttf") format("truetype");
