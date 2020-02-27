@@ -102,6 +102,36 @@ header nav a:hover {
     margin: 0 auto;
 }
 
+.services__text {
+    width: 940px;
+    margin: 0 auto;
+    font-family: Lato;
+    color: #666d89;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.services__our-services h2 {
+    font-size: 30px;
+    line-height: 18px;
+}
+
+.services__image-custom-design {
+    align-self: flex-start;
+    align-items: baseline;
+    width: 80px;
+}
+
+.services__custom-design,
+.services__inovative-ideas,
+.services__love-is,
+.services__responsive-layout,
+.services__247,
+.services__feel-like {
+    width: 240px;
+}
+
 @font-face {
     font-family: "Lato";
     src: url("assets/Lato-Bold.ttf") format("truetype");
