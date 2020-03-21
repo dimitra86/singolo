@@ -45,6 +45,9 @@ h5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: fixed;
+    width: 1020px;
+    top: 0px;
 }
 
 .navigation {
@@ -102,12 +105,50 @@ h5 {
     background-color: #f06c64;
     width: 1020px;
     margin: auto;
+    height: 600px;
+    margin-top: 95px;
 }
 
-.slider>.wrapper {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+.infinity-slider-wrap {
+    height: 600px;
+    position: relative;
+}
+
+.infinity-slider {
+    width: 1020px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.infinity-slider img {
+    position: absolute;
+    height: 600px;
+    opacity: 1;
+    transition: all ease 1s;
+}
+
+.btn-infinity-left,
+.btn-infinity-right {
+    width: 16px;
+    height: 27px;
+    background: url(../singolo/assets/img/slider/slider_left.png);
+    background-size: contain;
+    position: absolute;
+    top: -100;
+    top: 300px;
+    left: 50px;
+    cursor: pointer;
+}
+
+.btn-infinity-right {
+    background: url(../singolo/assets/img/slider/slider_right.png);
+    background-size: contain;
+    left: 933px;
+}
+
+.infinity-slider .opacity0 {
+    opacity: 0;
 }
 
 .slider__left {
@@ -412,6 +453,19 @@ h3 {
     padding-left: 6px;
     padding-right: 7px;
     margin-right: 7px;
+    cursor: pointer;
+}
+
+.tag:hover {
+    border: 1px solid #dedede;
+    color: #dedede;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 7px;
+    margin-right: 7px;
+    cursor: pointer;
 }
 
 .layout-4-column {
@@ -422,11 +476,6 @@ h3 {
 .picture {
     padding-right: 20px;
     padding-bottom: 17px;
-}
-
-.tag_selected {
-    color: #dedede;
-    border: 1px solid #dedede;
 }
 
 .portfolio-bottom {
@@ -506,6 +555,3 @@ h5 {
 .social-icons-footer>img {
     padding-left: 5px;
 }
-
-
-/*# sourceMappingURL=style.css.map */
