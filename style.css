@@ -140,12 +140,14 @@ h5 {
     margin-left: 54px;
     margin-top: 119px;
     opacity: 0;
+    cursor: pointer;
 }
 
 .bd-horizontal {
     margin-bottom: 73px;
     margin-left: 168px;
     opacity: 0;
+    cursor: pointer;
 }
 
 .btn-infinity-left,
