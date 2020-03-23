@@ -83,3 +83,17 @@ document.querySelector('.bd-horizontal').onclick = function() {
         displayoff();
     } else { displayon(); }
 }
+
+const TAGS = document.getElementById('portolio__tags');
+
+TAGS.addEventListener('click', (event) => {
+    TAGS.querySelectorAll('span').forEach(el => el.classList.remove('tag_selected'));
+    event.target.classList.add('tag_selected');
+})
+
+const PIC = document.getElementById('layout-4-column');
+
+PIC.addEventListener('click', (event) => {
+    PIC.querySelectorAll('img').forEach(el => el.classList.remove('foto_active'));
+    event.target.classList.add('foto_active');
+})
