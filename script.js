@@ -97,3 +97,39 @@ PIC.addEventListener('click', (event) => {
     PIC.querySelectorAll('img').forEach(el => el.classList.remove('foto_active'));
     event.target.classList.add('foto_active');
 })
+
+document.querySelector('#web').onclick = function() {
+
+    replacedNode = PIC.replaceChild(PIC.children[1], PIC.children[0]);
+    PIC.appendChild(replacedNode);
+
+    replacedNode = PIC.replaceChild(PIC.children[8], PIC.children[4]);
+    PIC.appendChild(replacedNode);
+}
+
+document.querySelector('#all').onclick = function() {
+
+    replacedNode = PIC.replaceChild(PIC.children[4], PIC.children[8]);
+    PIC.appendChild(replacedNode);
+
+    replacedNode = PIC.replaceChild(PIC.children[1], PIC.children[6]);
+    PIC.appendChild(replacedNode);
+}
+
+document.querySelector('#graphic').onclick = function() {
+
+    replacedNode = PIC.replaceChild(PIC.children[2], PIC.children[10]);
+    PIC.appendChild(replacedNode);
+
+    replacedNode = PIC.replaceChild(PIC.children[7], PIC.children[2]);
+    PIC.appendChild(replacedNode);
+}
+
+document.querySelector('#artwork').onclick = function() {
+
+    replacedNode = PIC.replaceChild(PIC.children[5], PIC.children[11]);
+    PIC.appendChild(replacedNode);
+
+    replacedNode = PIC.replaceChild(PIC.children[12], PIC.children[9]);
+    PIC.appendChild(replacedNode);
+}
