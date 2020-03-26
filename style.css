@@ -600,3 +600,12 @@ h5 {
     border: 1px solid #dedede;
     color: #dedede;
 }
+
+button {
+    background-color: #FBC65F;
+    width: 136px;
+    height: 38px;
+    border-radius: 5px;
+    color: #886A30;
+    font-size: 16px;
+}
