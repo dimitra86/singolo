@@ -133,3 +133,27 @@ document.querySelector('#artwork').onclick = function() {
     replacedNode = PIC.replaceChild(PIC.children[12], PIC.children[9]);
     PIC.appendChild(replacedNode);
 }
+
+let send = document.querySelector('#send');
+let subject = document.getElementById('subject').value;
+let describe = document.getElementById('describe').value;
+
+let work = 'work';
+send.onclick = function(event) {
+    event.preventDefault();
+    if (document.getElementById('subject').value == '') {
+        if (document.getElementById('describe').value == '') {
+            alert(`Письмо отправлено \nБез темы\nБез описания`);
+        } else {
+            alert(`Письмо отправлено \nБез темы\nОписание:` + document.getElementById('describe').value);
+
+
+        }
+    } else if (document.getElementById('describe').value == '') {
+        alert(`Письмо отправлено \nТема:` + document.getElementById('subject').value + '\nБез описания');
+    } else { alert(`Письмо отправлено \nТема:` + document.getElementById('subject').value + '\nОписание:' + document.getElementById('describe').value); }
+
+
+    // alert(`Письмо отправлено \nТема:\nОписание:` + subject);
+
+}
