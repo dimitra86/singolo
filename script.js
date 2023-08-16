@@ -5,7 +5,8 @@ MENU.addEventListener('click', (event) => {
     event.target.classList.add('active');
 })
 
-let images = document.querySelectorAll('.infinity-slider img');
+let images = document.querySelectorAll('.infinity-slider div');
+let imagesBlack = document.querySelectorAll('.black-screen');
 let current = 0;
 
 function slider() {
@@ -13,13 +14,14 @@ function slider() {
         images[i].classList.add('opacity0');
     }
     images[current].classList.remove('opacity0');
-
-
 }
 
-slider();
+let btnInfinityLeft=document.querySelector('.btn-infinity-left');
+let slider1=document.querySelector('.slider__1');
 
-document.querySelector('.btn-infinity-left').onclick = function() {
+
+
+document.querySelector('.btn-infinity-left').onclick = function () {
     if (current - 1 == -1) {
         current = images.length - 1;
 
@@ -27,15 +29,27 @@ document.querySelector('.btn-infinity-left').onclick = function() {
     slider();
     displayon();
 }
-document.querySelector('.btn-infinity-right').onclick = function() {
-    if (current + 1 == images.length) {
-        current = 0;
+document.querySelector('.btn-infinity-right').onclick = function () {
+    if (current - 1 == -1) {
+        current = images.length - 1;
 
-    } else { current++; }
+    } else { current--; }
     slider();
     displayon();
 }
 
+btnInfinityLeft.addEventListener('click', function (e) {
+    // console.log(slider2.classList[1]);
+    if (slider1.classList[1]=="opacity0"){
+      pic[0].classList.add('displaynone');
+      pic[1].classList.add('displaynone');
+    }
+    else{
+        pic[0].classList.remove('displaynone');
+        pic[1].classList.remove('displaynone');
+    }
+  });
+  
 
 let pic = document.querySelectorAll('.black-screen img');
 let number = 0;
@@ -52,6 +66,7 @@ function displayoff() {
 function displayon() {
     for (let j = 0; j < pic.length; j++) {
         pic[j].classList.remove('opacity1');
+        
 
     }
     n1 = 0;
@@ -72,13 +87,13 @@ function displaynoneremove() {
 }
 
 
-document.querySelector('.bd-vertical').onclick = function() {
+document.querySelector('.bd-vertical').onclick = function () {
     if (n1 == 0) {
         displayoff();
     } else { displayon(); }
 }
 
-document.querySelector('.bd-horizontal').onclick = function() {
+document.querySelector('.bd-horizontal').onclick = function () {
     if (n1 == 0) {
         displayoff();
     } else { displayon(); }
@@ -98,7 +113,7 @@ PIC.addEventListener('click', (event) => {
     event.target.classList.add('foto_active');
 })
 
-document.querySelector('#web').onclick = function() {
+document.querySelector('#web').onclick = function () {
 
     replacedNode = PIC.replaceChild(PIC.children[1], PIC.children[0]);
     PIC.appendChild(replacedNode);
@@ -107,7 +122,7 @@ document.querySelector('#web').onclick = function() {
     PIC.appendChild(replacedNode);
 }
 
-document.querySelector('#all').onclick = function() {
+document.querySelector('#all').onclick = function () {
 
     replacedNode = PIC.replaceChild(PIC.children[4], PIC.children[8]);
     PIC.appendChild(replacedNode);
@@ -116,7 +131,7 @@ document.querySelector('#all').onclick = function() {
     PIC.appendChild(replacedNode);
 }
 
-document.querySelector('#graphic').onclick = function() {
+document.querySelector('#graphic').onclick = function () {
 
     replacedNode = PIC.replaceChild(PIC.children[2], PIC.children[10]);
     PIC.appendChild(replacedNode);
@@ -125,7 +140,7 @@ document.querySelector('#graphic').onclick = function() {
     PIC.appendChild(replacedNode);
 }
 
-document.querySelector('#artwork').onclick = function() {
+document.querySelector('#artwork').onclick = function () {
 
     replacedNode = PIC.replaceChild(PIC.children[5], PIC.children[11]);
     PIC.appendChild(replacedNode);
@@ -139,7 +154,7 @@ let subject = document.getElementById('subject').value;
 let describe = document.getElementById('describe').value;
 
 let work = 'work';
-send.onclick = function(event) {
+send.onclick = function (event) {
     event.preventDefault();
     if (document.getElementById('subject').value == '') {
         if (document.getElementById('describe').value == '') {
