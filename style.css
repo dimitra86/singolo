@@ -1,11 +1,17 @@
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Lato", Verdana, sans-serif;
   margin: auto;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 h1 {
