@@ -154,7 +154,7 @@
                             .btn-infinity-right {
                                 width: 16px;
                                 height: 27px;
-                                background: url(../singolo/assets/img/slider/slider_left.png);
+                                background: url(./assets/img/slider/slider_left.png);
                                 background-size: contain;
                                 position: absolute;
                                 top: -100;
@@ -164,7 +164,7 @@
                             }
                             
                             .btn-infinity-right {
-                                background: url(../singolo/assets/img/slider/slider_right.png);
+                                background: url(./assets/img/slider/slider_right.png);
                                 background-size: contain;
                                 left: 933px;
                             }
@@ -501,17 +501,18 @@
                             .layout-4-column {
                                 display: flex;
                                 flex-wrap: wrap;
+                                gap: 13px;
                             }
                             
                             .picture {
-                                padding-right: 13px;
+                                /* padding-right: 13px; */
                                 padding-bottom: 13px;
                                 cursor: pointer;
                             }
                             
                             .picture2 {
                                 cursor: pointer;
-                                padding-right: 13px;
+                                /* padding-right: 13px; */
                             }
                             
                             .portfolio-bottom {
