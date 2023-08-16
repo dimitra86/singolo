@@ -17,6 +17,7 @@ function slider() {
 }
 
 let btnInfinityLeft=document.querySelector('.btn-infinity-left');
+let btnInfinityRight=document.querySelector('.btn-infinity-right');
 let slider1=document.querySelector('.slider__1');
 
 
@@ -39,6 +40,18 @@ document.querySelector('.btn-infinity-right').onclick = function () {
 }
 
 btnInfinityLeft.addEventListener('click', function (e) {
+    // console.log(slider2.classList[1]);
+    if (slider1.classList[1]=="opacity0"){
+      pic[0].classList.add('displaynone');
+      pic[1].classList.add('displaynone');
+    }
+    else{
+        pic[0].classList.remove('displaynone');
+        pic[1].classList.remove('displaynone');
+    }
+  });
+
+  btnInfinityRight.addEventListener('click', function (e) {
     // console.log(slider2.classList[1]);
     if (slider1.classList[1]=="opacity0"){
       pic[0].classList.add('displaynone');
